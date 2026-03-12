@@ -1,0 +1,30 @@
+# Archivos compilados
+dist/
+build/
+*.exe
+*.pkg
+*.spec
+ 
+# Icono generado (se regenera automaticamente)
+gcsoft.ico
+ 
+# Cache de Python
+__pycache__/
+*.py[cod]
+*.pyo
+ 
+# Configuracion del cliente (datos privados)
+config.json
+ 
+# PyInstaller temporales
+*.manifest
+ 
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+ 
+# Editor
+.vscode/
+.idea/
+*.swp

@@ -1,0 +1,40 @@
+═══════════════════════════════════════════════════════
+         GCsoft Reminder v1.0 — LEER PRIMERO
+═══════════════════════════════════════════════════════
+
+PASO A PASO PARA GENERAR EL .EXE:
+───────────────────────────────────
+
+1. INSTALÁ PYTHON (solo la primera vez)
+   → Bajalo de: https://www.python.org/downloads/
+   → Durante la instalación: TILDÁ "Add Python to PATH" ✅
+   → Aceptá todo lo demás
+
+2. EJECUTÁ EL COMPILADOR
+   → Doble clic en: COMPILAR_EN_WINDOWS.bat
+   → Esperá 1-2 minutos mientras trabaja
+   → Al terminar aparece: GCsoft_Reminder.exe en esta carpeta
+
+3. ¡LISTO!
+   → Copiá GCsoft_Reminder.exe a un pendrive
+   → Llevalo al taller y usalo con cada cliente
+
+═══════════════════════════════════════════════════════
+
+CÓMO USAR EL PROGRAMA EN LA PC DEL CLIENTE:
+─────────────────────────────────────────────
+
+1. Ejecutá GCsoft_Reminder.exe en la PC del cliente
+2. Se abre el Panel de Técnico (solo vos lo ves al principio)
+3. Ponés la fecha del próximo mantenimiento
+   → Botones rápidos: 3 meses / 6 meses / 1 año
+4. Clic en "Guardar e Instalar"
+5. El programa queda corriendo silencioso y arranca con Windows
+
+CUANDO LLEGA LA FECHA:
+   → El cliente ve una ventanita con tu nombre y teléfono
+   → Puede posponer 7 días o marcar como hecho
+
+═══════════════════════════════════════════════════════
+GCsoft — Tel: 358-4268768
+═══════════════════════════════════════════════════════
