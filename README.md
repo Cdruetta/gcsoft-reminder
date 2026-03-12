@@ -1,104 +1,123 @@
+<div align="center">
+
 # 🔧 GCsoft Reminder
 
-> Recordatorio automático de mantenimiento de PC para talleres de servicio técnico.
+### Recordatorio inteligente de mantenimiento de PC
 
-![Version](https://img.shields.io/badge/version-1.0.0-blue)
-![Platform](https://img.shields.io/badge/platform-Windows-informational)
-![Python](https://img.shields.io/badge/python-3.10%2B-yellow)
-![License](https://img.shields.io/badge/license-MIT-green)
+*Mantene a tus clientes conectados con tu taller — automaticamente.*
 
----
-
-## ¿Qué es?
-
-**GCsoft Reminder** es una pequeña aplicación para Windows que recuerda a los clientes de talleres de servicio técnico cuándo es momento de hacer el mantenimiento preventivo de su PC.
-
-El técnico instala el programa en la PC del cliente al momento de entregar el equipo, configura la fecha del próximo mantenimiento, y el programa se encarga del resto: corre silencioso en segundo plano y muestra un aviso en pantalla cuando llega la fecha indicada.
+[![Version](https://img.shields.io/badge/version-1.0.0-e94560?style=for-the-badge)](https://github.com)
+[![Platform](https://img.shields.io/badge/Windows-10%2F11-0078D6?style=for-the-badge&logo=windows)](https://github.com)
+[![Python](https://img.shields.io/badge/Python-3.10%2B-FFD43B?style=for-the-badge&logo=python&logoColor=black)](https://python.org)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey?style=for-the-badge)](https://creativecommons.org/licenses/by/4.0/)
 
 ---
 
-## Capturas
+**[Descargar](#instalacion) · [Como usarlo](#uso) · [Roadmap](#roadmap) · [Contacto](#autor)**
 
-### Panel del técnico
-> Se abre al ejecutar el programa. Solo lo usa el técnico al momento de configurar.
+</div>
 
-```
-+------------------------------------------+
-|  Panel de Tecnico - GCsoft               |
-|                                          |
-|  Nombre del taller: [GCsoft          ]   |
-|  Telefono:          [358-4268768     ]   |
-|  Fecha:             [12/03/2026      ]   |
-|                [3 meses][6 meses][1 año] |
-|                                          |
-|  [ Guardar e Instalar ] [ Previsualizar ]|
-+------------------------------------------+
-```
+---
 
-### Aviso al cliente
-> Aparece automáticamente en la fecha configurada.
+## Que problema resuelve?
+
+Cuando un cliente retira su PC del taller, es facil que olvide volver para el mantenimiento preventivo. Meses despues, el equipo falla, pierde datos, o tiene que pagar una reparacion costosa que se podria haber evitado.
+
+**GCsoft Reminder** soluciona esto de forma silenciosa y automatica:
+
+> Installas el programa una sola vez al entregar la PC. El cliente ni lo nota. Cuando llega la fecha, aparece un aviso con tu nombre y telefono. El cliente te llama. Vos trabajas.
+
+---
+
+## Como funciona
 
 ```
-+------------------------------------------+
-|  Recordatorio de Mantenimiento           |
-|                                          |
-|  Es momento de llevar tu PC a revision  |
-|  para su mantenimiento preventivo.       |
-|                                          |
-|  GCsoft  |  358-4268768                  |
-|                                          |
-|  [ Posponer 7 dias ]  [ Ya lo hice ]    |
-+------------------------------------------+
+  TECNICO                          CLIENTE
+     |                                |
+     | 1. Instala el programa         |
+     | 2. Configura la fecha          |
+     | 3. Entrega la PC               |
+     |                                |
+     |         ...pasan 6 meses...    |
+     |                                |
+     |              4. Aparece aviso -|
+     |              5. Cliente llama -|
+     | 6. Nuevo trabajo!              |
 ```
 
 ---
 
 ## Caracteristicas
 
-- Corre silencioso en segundo plano
-- Arranca automaticamente con Windows
-- Panel de configuracion exclusivo para el tecnico
-- Botones rapidos: 3 meses, 6 meses o 1 año
-- El cliente puede posponer 7 dias o marcar como hecho
-- Al marcar como hecho, reinicia el ciclo automaticamente
-- Sin dependencias externas para el usuario final
+| | Funcion |
+|---|---|
+| ⚙️ | Panel exclusivo para el tecnico |
+| 🕐 | Corre silencioso en segundo plano |
+| 🚀 | Arranca automaticamente con Windows |
+| 📅 | Botones rapidos: 3 meses, 6 meses, 1 ano |
+| 🔔 | Aviso con nombre y telefono del taller |
+| ⏰ | El cliente puede posponer 7 dias |
+| ✅ | Al marcar como hecho, reinicia el ciclo |
+| 📦 | Sin dependencias para el usuario final |
 
 ---
 
-## Requisitos para compilar
+## Instalacion
+
+### Requisitos
 
 - Windows 10 / 11
-- Python 3.10 o superior → [descargar](https://www.python.org/downloads/)
-  - Durante la instalacion tildar **"Add Python to PATH"**
+- Python 3.10 o superior
 
----
+> Al instalar Python, tildar **"Add Python to PATH"**
+> [Descargar Python](https://www.python.org/downloads/)
 
-## Instalacion y uso
-
-### 1. Clonar el repositorio
+### Pasos
 
 ```bash
+# 1. Clonar el repositorio
 git clone https://github.com/TU_USUARIO/gcsoft-reminder.git
 cd gcsoft-reminder
-```
 
-### 2. Compilar el ejecutable
-
-Hacer doble clic en:
-
-```
+# 2. Compilar (doble clic en Windows)
 COMPILAR_EN_WINDOWS.bat
 ```
 
-El script instala las dependencias necesarias y genera `GCsoft_Reminder.exe` en la misma carpeta. Tarda entre 1 y 2 minutos.
+Esto genera `GCsoft_Reminder.exe` en la misma carpeta. Tarda 1-2 minutos.
 
-### 3. Usar con un cliente
+---
 
-1. Copiar `GCsoft_Reminder.exe` a la PC del cliente
-2. Ejecutarlo — se abre el Panel del Tecnico
-3. Configurar la fecha del proximo mantenimiento
+## Uso
+
+### Como tecnico
+
+1. Copia `GCsoft_Reminder.exe` a la PC del cliente
+2. Ejecutalo — se abre el **Panel del Tecnico**
+3. Configura la fecha del proximo mantenimiento
 4. Clic en **Guardar e Instalar**
-5. El programa queda activo y arranca con Windows automaticamente
+5. Listo — el programa queda activo en segundo plano
+
+### Como ve el cliente
+
+Cuando llega la fecha, aparece esta ventana automaticamente:
+
+```
++----------------------------------------------+
+|  Recordatorio de Mantenimiento               |
++----------------------------------------------+
+|                                              |
+|   Es momento de llevar tu PC a revision     |
+|   para su mantenimiento preventivo.          |
+|                                              |
+|   Esto ayuda a que tu equipo dure mas       |
+|   y funcione siempre al 100%.               |
+|                                              |
+|   GCsoft              358-4268768            |
+|                                              |
+|   [ Posponer 7 dias ]   [ Ya lo hice ]      |
+|                                              |
++----------------------------------------------+
+```
 
 ---
 
@@ -106,27 +125,44 @@ El script instala las dependencias necesarias y genera `GCsoft_Reminder.exe` en 
 
 ```
 gcsoft-reminder/
-├── reminder.py                 # Codigo principal
-├── COMPILAR_EN_WINDOWS.bat     # Script de compilacion
-├── .gitignore
-└── README.md
+|
++-- reminder.py                # Codigo principal
++-- COMPILAR_EN_WINDOWS.bat    # Script para generar el .exe
++-- .gitignore                 # Archivos excluidos del repo
++-- README.md                  # Este archivo
 ```
 
 ---
 
-## Roadmap v2
+## Roadmap
 
-- [ ] Boton para abrir WhatsApp directo con el numero del taller
+### v1.0 — Actual
+
+- [x] Panel de configuracion para el tecnico
+- [x] Monitor silencioso en segundo plano
+- [x] Aviso automatico al cliente
+- [x] Opciones de posponer o marcar como hecho
+
+### v2.0 — Proximo
+
+- [ ] Boton para abrir WhatsApp directo con el taller
 - [ ] Logo personalizado del taller en el aviso
-- [ ] Sonido de notificacion al aparecer el aviso
+- [ ] Sonido de notificacion
 - [ ] Instalador .msi profesional
 
 ---
 
 ## Autor
 
-**GCsoft** — Servicio Tecnico  
-Tel: 358-4268768
+<div align="center">
+
+### GCsoft — Servicio Tecnico
+
+358-4268768
+
+*Desarrollado con dedicacion para talleres de servicio tecnico.*
+
+</div>
 
 ---
 
@@ -136,6 +172,14 @@ Tel: 358-4268768
 
 Este proyecto esta bajo licencia **Creative Commons Attribution 4.0 (CC BY 4.0)**.
 
-Podés usar, modificar y distribuir este software siempre que des el credito correspondiente al autor original:
+Podes usar, modificar y distribuir este software siempre que des el credito correspondiente al autor original:
 
-> GCsoft — Servicio Tecnico | Tel: 358-4268768
+> **GCsoft — Servicio Tecnico** | Tel: 358-4268768
+
+---
+
+<div align="center">
+
+*Hecho con dedicacion por GCsoft*
+
+</div>
