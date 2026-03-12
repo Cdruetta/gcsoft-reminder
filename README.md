@@ -132,4 +132,10 @@ Tel: 358-4268768
 
 ## Licencia
 
-MIT — libre para usar, modificar y distribuir.
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+
+Este proyecto esta bajo licencia **Creative Commons Attribution 4.0 (CC BY 4.0)**.
+
+Podés usar, modificar y distribuir este software siempre que des el credito correspondiente al autor original:
+
+> GCsoft — Servicio Tecnico | Tel: 358-4268768
